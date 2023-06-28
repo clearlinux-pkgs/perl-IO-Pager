@@ -1,0 +1,1 @@
+find %{buildroot}/usr/bin %{buildroot}/usr/lib/perl5 -type f -exec sed -i 's|/usr/local/bin/perl|/usr/bin/perl|' {} +

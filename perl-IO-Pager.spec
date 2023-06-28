@@ -5,7 +5,7 @@
 #
 Name     : perl-IO-Pager
 Version  : 2.10
-Release  : 1
+Release  : 2
 URL      : https://cpan.metacpan.org/authors/id/J/JP/JPIERCE/IO-Pager-2.10.tgz
 Source0  : https://cpan.metacpan.org/authors/id/J/JP/JPIERCE/IO-Pager-2.10.tgz
 Summary  : 'Select a pager (possibly perl-based) & pipe it text if a TTY'
@@ -98,6 +98,9 @@ find %{buildroot} -type f -name .packlist -exec rm -f {} ';'
 find %{buildroot} -depth -type d -exec rmdir {} 2>/dev/null ';'
 find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %{_fixperms} %{buildroot}/*
+## install_append content
+find %{buildroot}/usr/bin %{buildroot}/usr/lib/perl5 -type f -exec sed -i 's|/usr/local/bin/perl|/usr/bin/perl|' {} +
+## install_append end
 
 %files
 %defattr(-,root,root,-)
