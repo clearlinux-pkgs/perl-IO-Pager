@@ -7,7 +7,7 @@
 #
 Name     : perl-IO-Pager
 Version  : 2.10
-Release  : 5
+Release  : 6
 URL      : https://cpan.metacpan.org/authors/id/J/JP/JPIERCE/IO-Pager-2.10.tgz
 Source0  : https://cpan.metacpan.org/authors/id/J/JP/JPIERCE/IO-Pager-2.10.tgz
 Summary  : 'Select a pager (possibly perl-based) & pipe it text if a TTY'
